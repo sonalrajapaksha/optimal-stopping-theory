@@ -9,11 +9,11 @@ from simulate_distributions import simulate_distribution
 from simulate import simulate
 from waiting_cost import sim_with_cost, optimal_k_with_cost
 
-# ── Page setup ────────────────────────────────────────────────────────────────
+
 st.set_page_config(page_title="Secretary Problem", layout="wide")
 st.title("Optimal Stopping Explorer")
 
-# ── Sidebar ───────────────────────────────────────────────────────────────────
+
 st.sidebar.header("Parameters")
 
 mode = st.sidebar.radio("Mode", ["Classic", "Cost Penalty", "Distribution"])

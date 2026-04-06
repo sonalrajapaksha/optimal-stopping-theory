@@ -34,7 +34,7 @@ def sim_with_cost(N, k, cost, t=10000):
 
         # Default: if no candidate beats the benchmark, hire the last one
         hired_value = candidates[-1]
-        stopping_time = N  # Fixed: was mistakenly using loop variable i
+        stopping_time = N  
 
         # Selection phase: hire the first candidate who exceeds the benchmark
         for j in range(k, N):

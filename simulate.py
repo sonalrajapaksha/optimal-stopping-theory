@@ -3,6 +3,20 @@ import random
 # function to simulate N candidates over t trials. uses k as the tested optimal value
 def simulate(N, k, t = 10000):
 
+    '''
+    Simulates optimal stopping problem (secretary problem)
+    The function runs t monte carlo simulations with N candidate in random order. The first k are rejected but establish benchmark. 
+    After this the first value that is better than the observed is hired.
+    A trial is considered successful if the hired candidate is the best overall candidate
+
+    Args:
+        N (int) - amount of candidates
+        k (int) - amount of initial candidates automatically rejected
+        t (int)(default = 10000) - amount of trials
+    Returns:
+        (float) - the amount of trials that were successful
+    '''
+
     #init successful picks
     success = 0
 
